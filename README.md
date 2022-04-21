@@ -1,11 +1,20 @@
-# THIS REPO IS IN WORK IN PROGRESS, CURRENT SCRIPTS HAS COMPILATION ERRORS DUE DEPENDENCIES WITH "Odin Inspector", "UniTasks Extensions" and "HybridEZS"
+# THIS REPO IS IN WORK IN PROGRESS
+## CURRENT SCRIPTS HAS COMPILATION ERRORS DUE DEPENDENCIES WITH:
+## "Odin Inspector", "UniTasks Extensions" and "HybridEZS"
+
+
 ## I Will be working on simplifying these scripts and creating the documentation for their use
 
 ### the purpose of this repo is just giving a layer of compatibility between Gameobjets and Dots triggers
 in a way that "Gameobjects can trigger dots triggers" (is not so easy but a way to express it)
+
 This enables the use of physics cathegories from dots, using special attached colliders on gameobjects
+
 this is great for sparating the phyisics and the "Phyisic triggers logic" in your game, this increases the physics performance in areas where your game needs lots of triggers, or dynamic ones
+
 Even you can take advantage of the "Incompatibility" between dots physics and gameobjects physics
+
+
 
 when you have lots of colliders in a gameobject for giving them complex shapes made with primitives, this comes with a cost, trigger events may be triggered more than once per object and even if the layers can not mutually touch, there still having a little check to see if these can collide
 also the current physics layering scheme that unity offers, has a problem... **its is directly coupled with the rendering layers!!**,
